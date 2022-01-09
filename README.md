@@ -1,2 +1,0 @@
-# NFTchallenge
-Frontent Mentor
