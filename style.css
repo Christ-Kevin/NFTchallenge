@@ -1,0 +1,357 @@
+/* ## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600 */
+
+html {
+            box-sizing: border-box;
+            /* size */
+            font-size: 1.125rem;
+            /* 18px */
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        
+        body {
+            /* space */
+            margin: 0 auto;
+            padding: 0;
+            /* font and color */
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.125rem;
+            /* 18px */
+            font-weight: 300;
+            color: hsl(0, 0%, 100%);
+            background-color: hsl(217, 54%, 11%);
+            /*flex*/
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        /*############################################################*/
+        /* ARTICLE */
+        
+        article {
+            /* size */
+            width: 25%;
+            /* space */
+            margin: 50% auto;
+            padding: 1.7% 1.5% 1% 1.5%;
+            /* color and border */
+            background-color: hsl(216, 50%, 16%);
+            border-radius: 0.75rem;
+            box-shadow: 0 0.25rem 0.125rem 0.563rem hsl(216deg 50% 10%);
+            /* 0 4 2 9px */
+        }
+
+       /*#####################*/
+        section.title-link a,
+        section.avatar-description a {
+            /* color and decoration */
+            text-decoration: none;
+            color: hsl(0, 0%, 100%);
+        }
+        
+        h1 {
+            font-weight: 600;
+        }
+        
+        p {
+            color: hsl(215, 48%, 73%);
+        }
+
+        /*####################*/
+        section.image-cube {
+            /* position */
+            position: relative;
+        }
+        
+        /*#############
+        /* first child of section.image-cube */
+        section.image-cube img {
+            /* size and border */
+            height: 100%;
+            width: 100%;
+            border-radius: 0.75rem;
+            /*12px*/
+            /* space */
+            margin: 0 auto;
+            /* position and block */
+            display: block;
+            position: relative;
+            z-index: 2
+        }
+
+        /*#############
+        /* second child of section.image-cube */
+        section.image-cube p {
+            /* color */
+            background-color: hsla(178, 100%, 50%, 0.5);
+            /* size and border */
+            width: 100%;
+            height: 100%;
+            border-radius: 0.85rem;
+            /* 13.5px */
+            /* space */
+            margin: 0 auto;
+            /* flex */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            vertical-align: middle;
+            /* position */
+            position: absolute;
+            top: 0;
+            z-index: 1;
+        }
+
+        /*################################################################*/
+        /* ###### ACTIVE STATES #### */
+        section.title-link a:active,
+        section.avatar-description a:active {
+            /* color */
+            color: hsl(178, 100%, 50%);
+        }
+        section.image-cube img:active {
+            z-index: 0;
+        }
+        
+        /*#####################*/
+        section.time-diamond {
+            /* space */
+            margin: 0 auto;
+            padding: 0;
+            padding-bottom: 0.625rem;
+            /* flex */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* border */
+            border-bottom: thin solid hsl(215, 32%, 50%);
+        }
+        
+        /*#########
+        /* first child of section.time-diamond */
+        section.time-diamond p:nth-of-type(1) {
+            /* space */
+            margin-bottom: 0.8rem;
+            /* 14.5px */
+            /* typographie and color */
+            color: hsl(178, 100%, 50%);
+            font-weight: 600;
+        }
+
+        /*##########
+        /* second child of section.time-diamond */
+        section.time-diamond p:nth-of-type(2) {
+            font-weight: 400;
+            margin-bottom: 0.8rem;
+            /* 14.5px */
+        }
+
+        /*###########
+        /* icons */
+        i.icon {
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: inline-block;
+        }
+        
+        i#clockIcon {
+            background-image: url("images/icon-clock.svg");
+            /*size*/
+            height: 1.063rem;
+            /* 17px */
+            width: 1.063rem;
+            /* 17px */
+        }
+        
+        i#ethereumIcon {
+            background-image: url("images/icon-ethereum.svg");
+            /*size*/
+            height: 1.063rem;
+            /* 17px */
+            width: 0.688rem;
+            /* 11px */
+        }
+
+        /*#########################
+        /* second.avatar-description is the third item of the container #article */
+        section.avatar-description {
+            /* space and typographie */
+            margin: 0 auto;
+            padding-top: 0.625rem;
+            font-size: 0.87rem;
+            /* 15.5px */
+            /* flex */
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        /*##########
+        /* first child of section.avatar-description */
+        section.avatar-description p {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 1.125rem;
+            flex: 1;
+            font-size: 0.87rem;
+            text-align: left;
+        }
+
+        /*##########
+        /* second child of section.avatar-description */
+        section.avatar-description img {
+            /* size */
+            width: 15%;
+            height: 15%;
+            /* space */
+            margin-top: 0.9rem;
+            /* 16px */
+            margin-bottom: 1.125rem;
+            /* 18px */
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        /*############################################################*/
+        /* FOOTER */
+        footer {
+            /* typographie */
+            font-size: 0.688rem;
+            /* 11px */
+            text-align: center;
+        }
+        
+        footer a {
+            /* color */
+            color: hsl(228, 57%, 73%);
+        }
+
+        /*############################################################*/
+        /* DESKTOP DESIGN */
+        @media screen and (min-width: 501px) and (max-width: 1440px) {
+            html {
+               box-sizing: border-box;
+               /* size */
+               font-size: 1.125rem;
+               /* 18px */
+           }
+        
+           *,
+           *:before,
+           *:after {
+            box-sizing: inherit;
+           }
+        }
+
+        /*############################################################*/
+        /* MOBLE DESIGN */
+        @media screen and (max-width: 500px) {
+            html {
+                box-sizing: border-box;
+                font-size: 0.563rem;
+                /* 18px */
+            }
+            
+            *,
+            *:before,
+            *:after {
+                box-sizing: inherit;
+            }
+            
+            body {
+                font-family: 'Outfit', sans-serif;
+                /* font and color */
+                font-size: 0.563rem;
+                /* 18px */
+            }
+             
+            /* ###### ACTIVE STATES #### */
+            section.title-link a:active,
+            section.avatar-description a:active {
+                /* color */
+                color: hsl(178, 100%, 50%);
+            }
+            
+            section.image-cube img:active {
+            z-index: 0;
+            }
+            
+            section.time-diamond {
+                /* space */
+                padding-bottom: 0.313rem;
+            }
+            
+            i#clockIcon {
+                background-image: url("images/icon-clock.svg");
+                /*size*/
+                height: 0.5rem;
+                /* 17px */
+                width: 0.5rem;
+                /* 17px */
+            }
+            
+            i#ethereumIcon {
+                background-image: url("images/icon-ethereum.svg");
+                /*size*/
+                height: 0.5rem;
+                /* 17px */
+                width: 0.344rem;
+                /* 11px */
+            }
+            
+            section.avatar-description {
+                /* size */
+                font-size: 0.435rem;
+                /* 15.5px */
+                /* space */
+                padding-top: 0.313rem;
+            }
+            
+            section.avatar-description p {
+                /* size */
+                font-size: 0.435rem;
+                /* 15.5px */
+            }
+            
+            footer {
+                /* typographie */
+                font-size: 0.344rem;
+                /* 11px */
+                text-align: center;
+            }
+            
+        }
