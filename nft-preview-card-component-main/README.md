@@ -18,7 +18,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ## Overview
 
-### The challenge
+### The course
 
 Users should be able to:
 
@@ -44,6 +44,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
+- have a thorough knowledge of the handling of items and containers
+- put into practice the knowledge already acquired in float, flexbox and grid
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -52,10 +55,6 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - [Styled Components](https://styled-components.com/) - For styles
 
 ### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
