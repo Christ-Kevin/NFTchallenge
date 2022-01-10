@@ -4,11 +4,9 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ## Table of contents
 
-- [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
@@ -16,9 +14,8 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 
 
-## Overview
 
-### The course
+### The Challenge
 
 Users should be able to:
 
@@ -29,16 +26,9 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
-
-- have a thorough knowledge of the handling of items and containers
-- put into practice the knowledge already acquired in float, flexbox and grid
+- Solution GitHub: [https://github.com/Christ-Kevin/NFTchallenge.git]
 
 ### Built with
 
