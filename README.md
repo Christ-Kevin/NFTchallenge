@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution GitHub: [https://github.com/Christ-Kevin/NFTchallenge.git]
+- Solution URL: [https://christ-kevin.github.io/NFTchallenge/]
 
 ### Built with
 
