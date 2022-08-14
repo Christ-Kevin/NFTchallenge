@@ -54,6 +54,7 @@ body {
     font-weight: 300;
     color: hsl(0, 0%, 100%);
     background-color: hsl(217, 54%, 11%);
+    position: relative
 }
 
 /*############################################################*/
@@ -61,20 +62,25 @@ body {
 
 article {
     /* size */
-    width: 25%;
+    width: 80%;
+
     /* space */
-    margin: 50% auto 50% auto;
     padding: 1.7% 1.5% 1% 1.5%;
     /* color and border */
     background-color: hsl(216, 50%, 16%);
     border-radius: 0.75rem;
     box-shadow: 0 0.25rem 0.125rem 0.563rem hsl(216deg 50% 10%);
     /* 0 4 2 9px */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
 /*#####################*/
-section.title-link a,
-section.avatar-description a {
+.title-link a,
+.avatar-description a {
     /* color and decoration */
     text-decoration: none;
     color: hsl(0, 0%, 100%);
@@ -89,15 +95,21 @@ p {
 }
 
 /*####################*/
-section.image-cube {
+.image-cube {
     /* position */
     position: relative;
     width: 100%;
 }
 
+.image-cube,
+.title-link,
+.title-link + section {
+    margin-bottom: 1rem
+}
+
 /*#############
         /* first child of section.image-cube */
-section.image-cube img {
+.image-cube img {
     /* size and border */
 
     max-width: 100%;
@@ -114,7 +126,7 @@ section.image-cube img {
 
 /*#############
         /* second child of section.image-cube */
-section.image-cube p {
+.image-cube p {
     /* color */
     background-color: hsla(178, 100%, 50%, 0.5);
     /* size and border */
@@ -141,18 +153,18 @@ p svg {
 
 /*################################################################*/
 /* ###### ACTIVE STATES #### */
-section.title-link a:active,
-section.avatar-description a:active {
+.title-link a:active,
+.avatar-description a:active {
     /* color */
     color: hsl(178, 100%, 50%);
 }
 
-section.image-cube img:active {
+.image-cube img:active {
     z-index: 0;
 }
 
 /*#####################*/
-section.time-diamond {
+.time-diamond {
     /* space */
     margin: 0 auto;
     padding: 0;
@@ -167,7 +179,7 @@ section.time-diamond {
 
 /*#########
         /* first child of section.time-diamond */
-section.time-diamond p:nth-of-type(1) {
+.time-diamond p:nth-of-type(1) {
     /* space */
     margin-bottom: 0.8rem;
     /* 14.5px */
@@ -178,7 +190,7 @@ section.time-diamond p:nth-of-type(1) {
 
 /*##########
         /* second child of section.time-diamond */
-section.time-diamond p:nth-of-type(2) {
+.time-diamond p:nth-of-type(2) {
     font-weight: 400;
     margin-bottom: 0.8rem;
     /* 14.5px */
@@ -212,24 +224,24 @@ i#ethereumIcon {
 
 /*#########################
         /* second.avatar-description is the third item of the container #article */
-section.avatar-description {
+.avatar-description {
     /* space and typographie */
-    margin: 0 auto;
-    padding-top: 0.625rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding-top: .7rem;
     font-size: 0.87rem;
     /* 15.5px */
     /* flex */
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: flex-start;
 }
 
 /*##########
         /* first child of section.avatar-description */
-section.avatar-description p {
+.avatar-description p {
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 1.125rem;
     flex: 1;
     font-size: 0.87rem;
     text-align: left;
@@ -237,15 +249,11 @@ section.avatar-description p {
 
 /*##########
         /* second child of section.avatar-description */
-section.avatar-description img {
+.avatar-description img {
     /* size */
     width: 15%;
     height: 15%;
     /* space */
-    margin-top: 0.9rem;
-    /* 16px */
-    margin-bottom: 1.125rem;
-    /* 18px */
     margin-right: 0;
     margin-left: 0;
 }
@@ -265,9 +273,82 @@ footer a {
 }
 
 /*############################################################*/
-/* DESKTOP DESIGN */
-@media screen and (min-width: 501px) and (max-width: 1440px) {
+/* MOBLE DESIGN */
+@media screen and (min-width: 500px) {
+    body {
+        font-family: 'Outfit', sans-serif;
+        /* font and color */
+        font-size: 0.563rem;
+        /* 18px */
+    }
 
+    article {
+        width: 39%;
+    }
+
+    /* ###### ACTIVE STATES #### */
+    .title-link a:active,
+    .avatar-description a:active {
+        /* color */
+        color: hsl(178, 100%, 50%);
+    }
+
+    .image-cube img:active {
+        z-index: 0;
+    }
+
+    .time-diamond {
+        /* space */
+        padding-bottom: 0.313rem;
+    }
+
+    i#clockIcon {
+        background-image: url("../images/icon-clock.svg");
+        /*size*/
+        height: 0.5rem;
+        /* 17px */
+        width: 0.5rem;
+        /* 17px */
+    }
+
+    i#ethereumIcon {
+        background-image: url("../images/icon-ethereum.svg");
+        /*size*/
+        height: 0.5rem;
+        /* 17px */
+        width: 0.344rem;
+        /* 11px */
+    }
+
+    .avatar-description {
+        /* size */
+        font-size: 0.435rem;
+        /* 15.5px */
+        /* space */
+    }
+
+    .avatar-description p {
+        /* size */
+        font-size: 0.435rem;
+        /* 15.5px */
+    }
+
+    footer {
+        /* typographie */
+        font-size: 0.344rem;
+        /* 11px */
+        text-align: center;
+    }
+
+}
+
+/*############################################################*/
+/* DESKTOP DESIGN */
+@media screen and (min-width: 1000px) {
+
+    article {
+        width: 30%;
+    }
 
     /*###########
             /* icons */
@@ -294,71 +375,4 @@ footer a {
         width: 0.688rem;
         /* 11px */
     }
-}
-
-/*############################################################*/
-/* MOBLE DESIGN */
-@media screen and (max-width: 500px) {
-    body {
-        font-family: 'Outfit', sans-serif;
-        /* font and color */
-        font-size: 0.563rem;
-        /* 18px */
-    }
-
-    /* ###### ACTIVE STATES #### */
-    section.title-link a:active,
-    section.avatar-description a:active {
-        /* color */
-        color: hsl(178, 100%, 50%);
-    }
-
-    section.image-cube img:active {
-        z-index: 0;
-    }
-
-    section.time-diamond {
-        /* space */
-        padding-bottom: 0.313rem;
-    }
-
-    i#clockIcon {
-        background-image: url("../images/icon-clock.svg");
-        /*size*/
-        height: 0.5rem;
-        /* 17px */
-        width: 0.5rem;
-        /* 17px */
-    }
-
-    i#ethereumIcon {
-        background-image: url("../images/icon-ethereum.svg");
-        /*size*/
-        height: 0.5rem;
-        /* 17px */
-        width: 0.344rem;
-        /* 11px */
-    }
-
-    section.avatar-description {
-        /* size */
-        font-size: 0.435rem;
-        /* 15.5px */
-        /* space */
-        padding-top: 0.313rem;
-    }
-
-    section.avatar-description p {
-        /* size */
-        font-size: 0.435rem;
-        /* 15.5px */
-    }
-
-    footer {
-        /* typographie */
-        font-size: 0.344rem;
-        /* 11px */
-        text-align: center;
-    }
-
 }
