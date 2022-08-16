@@ -30,6 +30,7 @@ body {
 article {
     /* size */
     width: 80%;
+    min-height: 660px;
 
     /* space */
     padding: 1.7% 1.5% 1% 1.5%;
@@ -253,6 +254,6 @@ footer a {
 /* DESKTOP DESIGN */
 @media screen and (min-width: 62.5em) {
     article {
-        width: 30%;
+        width: 25%;
     }
 }
