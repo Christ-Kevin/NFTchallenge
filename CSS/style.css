@@ -134,8 +134,7 @@ p svg {
 .time-diamond {
     /* space */
     margin: 0 auto;
-    padding: 0;
-    padding-bottom: 0.625rem;
+    padding: 1rem 0 0.625rem 0;
     /* flex */
     display: flex;
     align-items: center;
@@ -177,7 +176,7 @@ p svg {
     width: 100%;
     margin-bottom: 1rem;
     padding-top: .7rem;
-    font-size: 0.87rem;
+    font-size: 1rem;
     /* 15.5px */
     /* flex */
     display: inline-flex;
@@ -191,7 +190,6 @@ p svg {
     margin-left: 0;
     margin-right: 0;
     flex: 1;
-    font-size: 0.87rem;
     text-align: left;
 }
 
@@ -210,7 +208,7 @@ p svg {
 /* FOOTER */
 footer {
     /* typographie */
-    font-size: 0.688rem;
+    font-size: 0.8125rem;
     /* 11px */
     text-align: center;
 }
@@ -226,7 +224,7 @@ footer a {
     body {
         font-family: 'Outfit', sans-serif;
         /* font and color */
-        font-size: 0.563rem;
+        font-size: 1.125rem;
         /* 18px */
     }
 
@@ -249,34 +247,11 @@ footer a {
         /* space */
         padding-bottom: 0.313rem;
     }
-
-
-
-    .avatar-description {
-        /* size */
-        font-size: 0.435rem;
-        /* 15.5px */
-        /* space */
-    }
-
-    .avatar-description p {
-        /* size */
-        font-size: 0.435rem;
-        /* 15.5px */
-    }
-
-    footer {
-        /* typographie */
-        font-size: 0.344rem;
-        /* 11px */
-        text-align: center;
-    }
 }
 
 /*############################################################*/
 /* DESKTOP DESIGN */
 @media screen and (min-width: 1000px) {
-
     article {
         width: 30%;
     }
