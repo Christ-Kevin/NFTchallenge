@@ -30,8 +30,6 @@ body {
 article {
     /* size */
     width: 80%;
-    min-height: 660px;
-
     /* space */
     padding: 1.7% 1.5% 1% 1.5%;
     /* color and border */
