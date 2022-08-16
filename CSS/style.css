@@ -205,14 +205,14 @@ p svg {
 
 /*############################################################*/
 /* FOOTER */
-footer {
+.footer {
     /* typographie */
     font-size: 0.8125rem;
     /* 11px */
     text-align: center;
 }
 
-footer a {
+.footer a {
     /* color */
     color: hsl(228, 57%, 73%);
 }
