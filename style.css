@@ -93,14 +93,14 @@ p {
 }
 
 /*####################*/
-section.image-cube {
+.image-cube {
     /* position */
     position: relative;
 }
 
 /*#############
         /* first child of section.image-cube */
-section.image-cube img {
+.image-cube img {
     /* size and border */
     height: 100%;
     width: 100%;
@@ -115,7 +115,7 @@ section.image-cube img {
 
 /*#############
         /* second child of section.image-cube */
-section.image-cube p {
+.image-cube p {
     /* color */
     background-color: hsla(178, 100%, 50%, 0.5);
     /* size and border */
@@ -138,18 +138,18 @@ section.image-cube p {
 
 /*################################################################*/
 /* ###### ACTIVE STATES #### */
-section.title-link a:active,
-section.avatar-description a:active {
+.title-link a:active,
+.avatar-description a:active {
     /* color */
     color: hsl(178, 100%, 50%);
 }
 
-section.image-cube img:active {
+.image-cube img:active {
     z-index: 0;
 }
 
 /*#####################*/
-section.time-diamond {
+.time-diamond {
     /* space */
     margin: 0 auto;
     padding: 0;
@@ -164,7 +164,7 @@ section.time-diamond {
 
 /*#########
         /* first child of section.time-diamond */
-section.time-diamond p:nth-of-type(1) {
+.time-diamond p:nth-of-type(1) {
     /* space */
     margin-bottom: 0.8rem;
     /* 14.5px */
@@ -175,41 +175,21 @@ section.time-diamond p:nth-of-type(1) {
 
 /*##########
         /* second child of section.time-diamond */
-section.time-diamond p:nth-of-type(2) {
+.time-diamond p:nth-of-type(2) {
     font-weight: 400;
     margin-bottom: 0.8rem;
     /* 14.5px */
 }
 
-/*###########
-        /* icons */
-i.icon {
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: inline-block;
+.time-diamond p {
+     display: flex;
+    align-items: center
 }
 
-i#clockIcon {
-    background-image: url("../images/icon-clock.svg");
-    /*size*/
-    height: 1.063rem;
-    /* 17px */
-    width: 1.063rem;
-    /* 17px */
-}
-
-i#ethereumIcon {
-    background-image: url("../images/icon-ethereum.svg");
-    /*size*/
-    height: 1.063rem;
-    /* 17px */
-    width: 0.688rem;
-    /* 11px */
-}
 
 /*#########################
         /* second.avatar-description is the third item of the container #article */
-section.avatar-description {
+.avatar-description {
     /* space and typographie */
     margin: 0 auto;
     padding-top: 0.625rem;
@@ -223,7 +203,7 @@ section.avatar-description {
 
 /*##########
         /* first child of section.avatar-description */
-section.avatar-description p {
+.avatar-description p {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 1.125rem;
@@ -234,7 +214,7 @@ section.avatar-description p {
 
 /*##########
         /* second child of section.avatar-description */
-section.avatar-description img {
+.avatar-description img {
     /* size */
     width: 15%;
     height: 15%;
