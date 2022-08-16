@@ -35,44 +35,20 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- [Styled Components](https://styled-components.com/) - For styles
 
 ### What I learned
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-<section class="time-diamond">
-            <p><i class="icon" id="ethereumIcon"></i> 0.041 ETH</p>
-            <p><i class="icon" id="clockIcon"></i> 3 days left</p>
-        </section>
-```
+
 ```css
 .proud-of-these-css {
    /* ###### ACTIVE STATES #### */
-        section.title-link a:active,
-        section.avatar-description a:active {
+        .title-link a:active,
+        .avatar-description a:active {
             /* color */
             color: hsl(178, 100%, 50%);
         }
-        section.image-cube img:active {
+        .image-cube img:active {
             z-index: 0;
-        }
- /*###########
-        /* icons */
-        i.icon {
-            background-repeat: no-repeat;
-            background-size: contain;
-            display: inline-block;
-        }
-        
-        i#clockIcon {
-            background-image: url("images/icon-clock.svg");
-            /*size*/
-            height: 1.063rem;
-            /* 17px */
-            width: 1.063rem;
-            /* 17px */
         }
 }
 ```
