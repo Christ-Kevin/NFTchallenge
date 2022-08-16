@@ -220,7 +220,7 @@ footer a {
 
 /*############################################################*/
 /* MOBLE DESIGN */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 31.25em) {
     body {
         font-family: 'Outfit', sans-serif;
         /* font and color */
@@ -251,7 +251,7 @@ footer a {
 
 /*############################################################*/
 /* DESKTOP DESIGN */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 62.5em) {
     article {
         width: 30%;
     }
