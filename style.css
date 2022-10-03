@@ -28,7 +28,7 @@ The designs were created to the following widths:
 ### Font
 
 - Family: [Outfit](https://fonts.google.com/specimen/Outfit)
-- Weights: 300, 400, 600 */
+- Weights: 300, 400, 600 
 
 /* Box sizing rules */
 *,
@@ -63,7 +63,7 @@ body {
 /*############################################################*/
 /* ARTICLE */
 
-article {
+.wrapper {
     /* size */
     width: 89%;
     /* space */
@@ -77,12 +77,6 @@ article {
 }
 
 /*#####################*/
-section.title-link a,
-section.avatar-description a {
-    /* color and decoration */
-    text-decoration: none;
-    color: hsl(0, 0%, 100%);
-}
 
 h1 {
     font-weight: 600;
@@ -96,20 +90,23 @@ p {
 .image-cube {
     /* position */
     position: relative;
+    width: 100%;
 }
 
 /*#############
         /* first child of section.image-cube */
 .image-cube img {
     /* size and border */
-    height: 100%;
-    width: 100%;
+
+
     border-radius: 0.75rem;
     /*12px*/
     /* space */
-    margin: 0 auto;
-    /* position and block */
+    margin: 0;
     display: block;
+    /* position and block */
+    position: relative;
+    width: 100%;
     z-index: 2
 }
 
@@ -119,12 +116,11 @@ p {
     /* color */
     background-color: hsla(178, 100%, 50%, 0.5);
     /* size and border */
-    max-width: 100%;
-    max-height: 100%;
+ 
     border-radius: 0.85rem;
     /* 13.5px */
     /* space */
-    margin: 0 auto;
+
     /* flex */
     display: flex;
     justify-content: center;
@@ -138,13 +134,13 @@ p {
 
 /*################################################################*/
 /* ###### ACTIVE STATES #### */
-.title-link a:active,
-.avatar-description a:active {
+.title-link a:hover,
+.avatar-description a:hover {
     /* color */
     color: hsl(178, 100%, 50%);
 }
 
-.image-cube img:active {
+.image-cube img:hover {
     z-index: 0;
 }
 
@@ -182,7 +178,7 @@ p {
 }
 
 .time-diamond p {
-     display: flex;
+    display: flex;
     align-items: center
 }
 
@@ -287,18 +283,6 @@ footer a {
 /*############################################################*/
 /* MOBLE DESIGN */
 @media screen and (max-width: 500px) {
-    html {
-        box-sizing: border-box;
-        font-size: 0.563rem;
-        /* 18px */
-    }
-
-    *,
-    *:before,
-    *:after {
-        box-sizing: inherit;
-    }
-
     body {
         font-family: 'Outfit', sans-serif;
         /* font and color */
@@ -307,13 +291,13 @@ footer a {
     }
 
     /* ###### ACTIVE STATES #### */
-    section.title-link a:active,
-    section.avatar-description a:active {
+    section.title-link a:hover,
+    section.avatar-description a:hover {
         /* color */
         color: hsl(178, 100%, 50%);
     }
 
-    section.image-cube img:active {
+    section.image-cube img:hover {
         z-index: 0;
     }
 

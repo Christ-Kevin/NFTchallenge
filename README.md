@@ -41,16 +41,9 @@ Users should be able to:
 
 ```css
 .proud-of-these-css {
-   /* ###### ACTIVE STATES #### */
-        .title-link a:active,
-        .avatar-description a:active {
-            /* color */
-            color: hsl(178, 100%, 50%);
-        }
-        .image-cube img:active {
-            z-index: 0;
-        }
-}
+ 
+ }
+
 ```
 
 
