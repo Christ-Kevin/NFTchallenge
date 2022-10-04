@@ -98,7 +98,6 @@ p {
 .image-cube img {
     /* size and border */
 
-
     border-radius: 0.75rem;
     /*12px*/
     /* space */
@@ -110,8 +109,7 @@ p {
     z-index: 2
 }
 
-/*#############
-        /* second child of section.image-cube */
+/*#############*/
 .image-cube p {
     /* color */
     background-color: hsla(178, 100%, 50%, 0.5);
@@ -158,8 +156,7 @@ p {
     border-bottom: thin solid hsl(215, 32%, 50%);
 }
 
-/*#########
-        /* first child of section.time-diamond */
+/*#########*/
 .time-diamond p:nth-of-type(1) {
     /* space */
     margin-bottom: 0.8rem;
@@ -169,8 +166,7 @@ p {
     font-weight: 600;
 }
 
-/*##########
-        /* second child of section.time-diamond */
+/*##########*/
 .time-diamond p:nth-of-type(2) {
     font-weight: 400;
     margin-bottom: 0.8rem;
@@ -183,8 +179,7 @@ p {
 }
 
 
-/*#########################
-        /* second.avatar-description is the third item of the container #article */
+/*#########################*/
 .avatar-description {
     /* space and typographie */
     margin: 0 auto;
@@ -197,8 +192,7 @@ p {
     justify-content: flex-start;
 }
 
-/*##########
-        /* first child of section.avatar-description */
+/*##########*/
 .avatar-description p {
     margin-left: 0;
     margin-right: 0;
@@ -208,8 +202,7 @@ p {
     text-align: left;
 }
 
-/*##########
-        /* second child of section.avatar-description */
+/*##########*/
 .avatar-description img {
     /* size */
     width: 15%;

@@ -23,7 +23,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*position: relative;*/
 }
 
 /*############################################################*/
@@ -54,13 +53,13 @@ body {
     display: flex;
 }
 
-.equilibrium{
+.equilibrium {
     width: 100%;
-        height: auto;
-        border-radius: inherit;    
+    height: auto;
+    border-radius: inherit;
 }
 
-.image-parent .eye-parent {
+.eye-parent {
     position: absolute;
     top: 0;
     left: 0;
@@ -70,20 +69,23 @@ body {
     border-radius: inherit;
     width: 100%;
     display: flex;
-    opacity: 0;
+    opacity: 0;           /* opacity = 0 */   
     justify-content: center;
-    align-items:  center;
-    transition: opacity 1s .2s;
+    align-items: center;
+    transition: opacity 1s .2s;    /* transition on opacity of eye-parent from 0 to 1 */ 
 }
 
+
+/* add eye inside .eye and set opacity of container on hover of equilibrium to 1 */
 .eye {
-    background-image: url('../images/icon-view.svg');    
+    background-image: url('../images/icon-view.svg');
     width: 3rem;
     height: 2.5rem;
 }
 
 .image-parent:hover .eye-parent {
-    opacity: 1; /*dsdddsd*/
+    opacity: 1;           /* opacity = 1 */
+    /* eye icon appears */
 }
 
 .wrapper-title {
@@ -113,7 +115,7 @@ hr {
 
 a {
     text-decoration: none;
-    color:hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
 }
 
 a:hover {

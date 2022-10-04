@@ -10,6 +10,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
+  - [Ressources](#ressources) 
 - [Author](#author)
 
 
@@ -24,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
@@ -38,15 +39,22 @@ Users should be able to:
 
 ### What I learned
 
-
-```css
-.proud-of-these-css {
- 
- }
+```html
 
 ```
 
 
+```css
+     .proud-of-these-css {
+ 
+     }
+
+```
+
+### Ressources 
+
+- Chris Coyier - [Links in headers or headers in links](https://css-tricks.com/link-header-header-link/)
+- W3C. Wai - [An alt decision tree ](https://css-tricks.com/link-header-header-link/)
 
 ### Continued development
 
