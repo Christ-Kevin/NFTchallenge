@@ -66,4 +66,4 @@ Users should be able to:
 
 - LinkedIn - [Christ Watat](https://www.linkedin.com/in/christ-k%C3%A9vin-touga-watat-32026712a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8kg%2Bc3nQSpeLtRN4etFyNA%3D%3D)
 - Frontend Mentor - [@Christ-Kevin](https://www.frontendmentor.io/profile/Christ-Kevin)
-- Twitter - [@WatatK](https://www.twitter.com/WatatK)
+- Twitter - [@WatatK](https://twitter.com/christkevdev)
